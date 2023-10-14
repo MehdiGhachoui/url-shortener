@@ -1,0 +1,11 @@
+{{if .Data}}
+<div class="text-center py-7 text-lg bg-green-400 mx-96 mt-56">
+    <a href={{.Data}}>{{.Data}}</a>
+</div>
+{{end}}
+
+{{if .Error}}
+<div class="text-center py-7 text-lg bg-red-400 mx-96 mt-56">
+    <p>{{.Error}}</p>
+</div>
+{{end}}

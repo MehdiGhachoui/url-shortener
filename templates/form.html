@@ -1,0 +1,11 @@
+{{define "form"}}
+<div>
+    <h1 class=" text-5xl underline my-32 text-center text-yellow-100 ">Create Short Link</h1>
+    <form class="grid grid-cols-1 gap-5  place-items-center -my-20 " hx-post="/shorten" hx-target="#results">
+        <input type="text" name="url" class="p-3 rounded-full shadow-md w-1/2" />
+        <button type="submit"
+            class="bg-red-500 hover:bg-red-600 text-white shadow-md hover:shadow-lg rounded-full p-3 w-1/12 text-lg ">Create</button>
+    </form>
+    <div id="results"></div>
+</div>
+{{end}}
